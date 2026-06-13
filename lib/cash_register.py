@@ -21,7 +21,7 @@ class CashRegister:
   def add_item(self, title, price, quantity=1):
     amount = price * quantity
     self.total += amount
-    self.last_transaction = amount
+    self._previous_transactions = amount
 
     for _ in range(quantity):
       self.items.append(title)
