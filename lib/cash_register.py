@@ -7,16 +7,16 @@ class CashRegister:
     self.items = []
     self._previous_transactions = previous_transactions
 
-  @property
-  def discount(self):
-    return self._discount
+  # @property
+  # def discount(self):
+  #   return self._discount
   
-  @discount.setter
-  def discount(self, value):
-      if (0 <= value <= 1):
-        self._discount = value
-      else:
-        ValueError("Discount must be between 0 and 1")
+  # @discount.setter
+  # def discount(self, value):
+  #     if (0 <= value <= 1):
+  #       self._discount = value
+  #     else:
+  #       ValueError("Discount must be between 0 and 1")
   
   def add_item(self, title, price, quantity=1):
     amount = price * quantity
