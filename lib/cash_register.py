@@ -5,7 +5,7 @@ class CashRegister:
     self.discount = discount
     self.total = 0
     self.items = []
-    self._last_transaction = 0
+    self._previous_transactions = 0
 
   @property
   def discount(self):
@@ -34,5 +34,5 @@ class CashRegister:
       print("No discount")
 
   def void_last_transaction(self):
-    self.total -= self._last_transaction
+    self.total -= self._previous_transactions
     self.last_transaction = 0
