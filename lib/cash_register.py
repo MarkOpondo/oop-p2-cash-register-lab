@@ -5,7 +5,7 @@ class CashRegister:
     self.discount = discount
     self.total = 0
     self.items = []
-    self._previous_transactions = 0
+    self._previous_transactions = []
 
   # @property
   # def discount(self):
